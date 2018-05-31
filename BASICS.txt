@@ -1,3 +1,9 @@
+USO DEL SCRIPT
+==============
+
+./pomodoro.sh [trabajo (min)] [descanso (min)]
+
+
 TÉCNICA BÁSICA
 ==============
 
