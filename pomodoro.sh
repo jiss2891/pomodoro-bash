@@ -40,10 +40,15 @@ function relax {
 	notify-send "Toma un descanso" -i pause.png
 }
 
+function update_prompt {
+	printf "\033[2K\r$1"
+}
+
 function monitor {
 	tiempo=$1
 	tini=$(date +%s)
 	tfin=$tini
+	stage_name=${2:- ""}
 	while [ $((tfin - tini)) -le $tiempo ]
 	do
 		actual=$((tiempo - tfin + tini))
@@ -51,7 +56,7 @@ function monitor {
 		hora=$((actual / 3600))
 		minutos=$(((actual / 60) % 60))
 		segundos=$((actual % 60))
-		printf "Tiempo restante: $hora:$minutos:$segundos\r"
+		update_prompt "$stage_name: Tiempo restante: $hora:$minutos:$segundos"
 		tfin=$(date +%s)
 	done
 }
@@ -63,7 +68,7 @@ validate $descanso "tiempo de descanso"
 while [ 1 == 1 ]
 do
 	work
-	monitor $((trabajo * 60))
+	monitor $((trabajo * 60)) "TRABAJO"
 	relax
-	monitor $((descanso * 60))
+	monitor $((descanso * 60)) "DESCANSO"
 done
