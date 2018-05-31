@@ -9,6 +9,7 @@ descanso=${2:- 5};
 function usage {
 	printf "\nUsage:\n./pomodoro.sh [trabajo (min)] [descanso (min)]\n"
 }
+
 function validate {
 	num=$1
 	extra=$2
@@ -16,16 +17,16 @@ function validate {
 		extra="($extra)"
 	fi
 
-	if ! [[ $num =~ $num_regex ]]
-	then
+	if [ "$num" == "--help" ]; then
+		less BASICS.txt
+		exit 0
+	elif ! [[ $num =~ $num_regex ]]; then
 		echo "El parámetro '$num' debe ser numérico. $extra"
 		exit 1
-	elif [ $num -lt 1 ]
-	then
+	elif [ $num -lt 1 ]; then
 		echo "El tiempo ingresado debe ser mayor a cero. $extra"
 		exit 1
-	elif [ $num -gt 1440 ]
-	then
+	elif [ $num -gt 1440 ]; then
 		echo "El tiempo ingresado debe ser menor a 24 hs. $extra"
 		exit 1
 	fi

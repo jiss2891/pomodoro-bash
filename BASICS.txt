@@ -1,0 +1,33 @@
+TÉCNICA BÁSICA
+==============
+
+1. Decidir la tarea o actividad a realizar
+2. Poner el temporizador
+3. Trabajar en la tarea de manera intensiva hasta que el temporizador suene
+4. Hacer una marca para anotar qué pomodoro se ha completado
+5. Tomar una pausa breve
+6. Cada cuatro pomodoros, tomar una pausa más larga
+
+En el planeamiento, las tareas pueden venir de una lista "para hacer hoy".
+También se puede intentar estimar el esfuerzo que cada tarea podría requerir.
+
+Durante el pomodoro, el foco es otorgado a una sola actividad o tarea.
+
+Un objetivo esencial de la técnica es eliminar las interrupciones, tanto
+debido a uno mismo (internas), como a alguien más (externas). Esto se hace
+anotándolas rápidamente para atenderlas luego.
+Un pomodoro no se puede pausar ni dividir; si no es posible postergar la
+interrupción, el pomodoro se cancela para reiniciarlo luego.
+
+Las pausas son dedicadas a relajar el foco, evitando cualquier actividad.
+Ayudan a hacer sostenible el trabajo.
+
+Registrar un pomodoro completado es tanto para tener un sentimiento de logro
+como para tener una base de datos, sobre la que más tarde se hace una
+reflexión para mejorar.
+
+La duración del pomodoro tradicional es de 25 minutos, el de las pausas
+cortas de 5 minutos y el de las largas de 20 minutos. Sin embargo, se pueden
+ajustar a los que funcionen mejor para cada persona.
+
+
